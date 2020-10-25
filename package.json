@@ -2,6 +2,7 @@
   "name": "freddie",
   "version": "1.0.0",
   "description": "Freddie bot for Discord",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/jmcaree/freddie.git"
@@ -9,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
-    "start": "node src/index.ts",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node ./build/index.js",
     "watch": "tsc -p tsconfig.json -w",
     "test": "jest"
   },
