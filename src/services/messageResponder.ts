@@ -1,8 +1,7 @@
 import { Message } from "discord.js";
 import PingFinder from "./pingFinder";
-import inversify from "inversify";
+import { inject, injectable } from "inversify";
 import { TYPES } from "../types";
-const { inject, injectable } = inversify;
 
 @injectable()
 export default class MessageResponder {

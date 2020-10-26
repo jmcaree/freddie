@@ -1,8 +1,9 @@
 import "reflect-metadata";
 import { Client } from "discord.js";
-import inversify from "inversify";
-const { Container } = inversify;
-import { Freddie } from "./freddie";
+// import inversify from "inversify";
+// const { Container } = inversify;
+import { Container } from "inversify";
+import Freddie from "./freddie";
 import PingFinder from "./services/pingFinder";
 import { TYPES } from "./types";
 import MessageResponder from "./services/messageResponder";

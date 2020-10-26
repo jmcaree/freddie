@@ -1,11 +1,12 @@
 import { Client, Message } from "discord.js";
-import inversify from "inversify";
-const { inject, injectable } = inversify;
+// import inversify from "inversify";
+// const { inject, injectable } = inversify;
+import { inject, injectable } from "inversify";
 import { TYPES } from "./types";
 import MessageResponder from "./services/messageResponder";
 
 @injectable()
-export class Freddie {
+export default class Freddie {
     private client!: Client;
     private readonly token!: string;
     private readonly messageResponder!: MessageResponder;

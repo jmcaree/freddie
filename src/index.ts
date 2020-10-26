@@ -1,7 +1,7 @@
 import "dotenv/config";
 import container from "./inversify.config";
 import { TYPES } from "./types";
-import { Freddie } from "./freddie";
+import Freddie from "./freddie";
 
 const freddie = container.get<Freddie>(TYPES.Freddie);
 freddie

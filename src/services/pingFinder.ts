@@ -1,5 +1,4 @@
-import inversify from "inversify";
-const { injectable } = inversify;
+import { injectable } from "inversify";
 
 @injectable()
 export default class PingFinder {
